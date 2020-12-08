@@ -65,6 +65,7 @@
 
 ## 2.5 测试SSO效果
 
+*[新应用程序接入]*
 请拉取 tibcas-cognito-website-2 代码，重复 2.3 - 2.4 步骤，配置tibcas-cognito-website-2的src/amplify-config.js文件信息。
 
 请注意：tibcas-cognito-website-2我们配置的端口为4000，所以“应用程序集成-应用程序客户端设置”中的”回调URL“和”注销URL“为：”http://localhost:4000“。
