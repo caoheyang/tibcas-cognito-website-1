@@ -30,7 +30,7 @@ const awsConfig = {
         name: "WildRydesAPI",
         endpoint:
           "https://cq4lm8igil.execute-api.ap-northeast-1.amazonaws.com/prod", // example: 'https://u8swuvl00f.execute-api.us-east-2.amazonaws.com/prod'
-        region: "ap-southeast-1", // example: 'us-east-2'
+        region: "ap-northeast-1", // example: 'us-east-2'
       },
     ],
   }

@@ -18,7 +18,7 @@ function HelloWorld(props) {
       body: {},
       headers: {
         "Content-Type": "application/json",
-        "Authorization":  session.getIdToken().getJwtToken()
+        //"Authorization":  session.getIdToken().getJwtToken()
       },
     };
     console.log("API Request:getJwtToken",  session.getIdToken().getJwtToken());
