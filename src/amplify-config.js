@@ -5,7 +5,7 @@
 
 const awsConfig = {
   Auth: {
-    identityPoolId: "ap-northeast-1:dffce4c1-b44b-414c-88df-ee326bd460d1", // example: 'us-east-2:c85f3c18-05fd-4bb5-8fd1-e77e7627a99e'
+    //identityPoolId: "ap-northeast-1:dffce4c1-b44b-414c-88df-ee326bd460d1", // example: 'us-east-2:c85f3c18-05fd-4bb5-8fd1-e77e7627a99e'
     region: "ap-northeast-1", // example: 'us-east-2'
     userPoolId: "ap-northeast-1_voqcBvtmu", // example: 'us-east-2_teEUQbkUh'
     userPoolWebClientId: "13agp43mnahelvuum2v8a0nsp5", // example: '3k09ptd8kn8qk2hpk07qopr86'
