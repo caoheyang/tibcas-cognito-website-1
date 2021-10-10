@@ -50,18 +50,19 @@
 
 1、点击“应用程序集成-应用程序客户端设置”，参照如图进行配置，我们选择”Cognito User Pool“作为身份提供商。
 
-![avatar](pictures/3.png)
+![avatar](pictures/9.png)
 
-![avatar](pictures/4.png)
+![avatar](pictures/10.png)
 
 2、请注意：”回调URL“和”注销URL“，需要与前端系统的端口保持一致，在本示例中，请保证端口的一致性。
 
 3、打开 src/amplify-config.js 和存储【”应用程序客户端 ID“的值和”池 ID“】的文件进行配置，目前只配置标注项即可。
 ![avatar](pictures/10.png)
 
-4、 "npm start" 启动应用程序，点击”Sign In“，将会跳转到HostUI托管的登录/注册页面，第一次需要先注册。
+4、 "npm start" 启动应用程序，点击”Sign In“，将会跳转到HostUI托管的登录/注册页面，第一次需要先注册，注册成功登陆后访问http://localhost:3000/profile可以看到注册邮箱，表示用户登陆成功。
 
 ![avatar](pictures/11.png)
+
 
 ## 2.5 测试SSO效果
 
@@ -70,7 +71,7 @@
 
 请注意：tibcas-cognito-website-2我们配置的端口为4000，所以“应用程序集成-应用程序客户端设置”中的”回调URL“和”注销URL“为：”http://localhost:4000“。
 
-此时点击tibcas-cognito-website-2的”Sign In“不在需要登录。
+此时点击tibcas-cognito-website-2的”Sign In“不在需要登录,将会自动跳转到 Hosted UI 域名地址通过SSO登陆成功，然后访问 http://localhost:4000/profile 可以看到用户登陆信息。
 
 # 3、权限验证
 
